@@ -1,0 +1,39 @@
+Comparision:
+
+string == int works but not other comparision operators
+
+Substring finding: "in" operator
+
+substring in string  => returns True or false
+
+Length operator:
+length (string)
+
+Slicing:
+from start to stop-1
+
+string[start:stop]
+string[start:] - default to end
+string[:] - full
+
+Strings once initialzed cannot be changed. But can only be concatinated in different ways.
+Eg: sting = string[0:x]+somestring+string[x:]
+
+
+Methods:
+Function inside an object.
+Usage:
+object.method(arg)
+
+eg: from math--- string.lower() --- original not modified
+Help:
+
+dir(str)  and help(fn)-- learn
+===================================================
+Can Debug inside IDLE.
+
+=================================================
+
+for loop:
+
+for var in something(string) :

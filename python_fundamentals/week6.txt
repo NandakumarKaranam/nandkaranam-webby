@@ -1,0 +1,71 @@
+Be careful on how range acts on lists, test with len().
+i in range(len(list))
+
+Learn list operations correctly for exam.
+
+
+Nested lists: similar to multidimensional arrays(2d onwards)
+
+for item in twoDimlist:
+	use item[i] as one list is temporarily copied into item
+
+FILES:
+
+open(filename,mode)
+r w a
+
+file.readline() - returns(prints) whole line and even \n at the end
+		- returns empty string if EOF is encountered
+file.close()
+learn about end='' utility in python string printing
+
+print(line_read,end='') -> removes blank line inbetween
+
+file.read() -> entire file
+
+file.readlines() -> prints all the lines in file even '\n'-----carefull \n is one line too
+
+file.write(str) command writes to a file.
+
+
+tkinter utility for gui file access:
+import tkinter.filedialog
+tkinter.filedialog.askopenfilename() - opens a gui window to select file. (didnt try)
+
+	"	asksaveasfilename()
+
+
+
+
+Tuples:
+
+immutable; (...,..,..,..)
+single element tuple:eg: (1,)
+empty tuple: eg: ()
+
+Dictionary:
+TYPE DICT
+dict = {key :value,key :value..) to assign to lists
+dict[key] returns value(key must be unique)
+
+ERROR for keys that dont exsist(key error).
+ 
+key in list ->returns boolean (works only on keys not values)
+false for values as key is checked
+
+len(dict) -> returns num keys
+
+dict['key'] = value ->assignment ...........MUTABLE
+
+del dict[key] -> remove key and value
+
+for i in dict:
+	i returns keys.
+	can acess value using indices
+key and values must be same for different elements of dict.
+
+
+Inverting a dictionary:
+--be careful--
+
+ 

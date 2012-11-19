@@ -1,0 +1,4 @@
+def square_num (num):
+    ''' (num) -> num
+    Return square of a number'''
+    return num ** 2

@@ -1,0 +1,71 @@
+
+Learn to Program: The Fundamentals // Assignment 3
+Preface
+Required Preparation
+
+This handout assumes that you have watched all the week 6 videos and also done the week 6 exercise. If you read this handout before you've done all of that, please come back and re-read it after you've passed the week 6 exercise.
+A3 Problem Domain: Word Search Game
+
+For A3, you will implement a word search game. The game involves an rectangular board of uppercase letters that is read from a file. For example, here are the file contents representing a (tiny) 2 row by 4 column board:
+
+ANTT
+XSOB
+
+The game also involves a non-empty words list read from a file. For example, here are example file contents for a list of three words:
+
+ANT
+BOX
+SOB
+TO
+
+The object of the game is for the players to view the board and find words (the words list is unknown to the players). Words may be contained in rows (from left to right) or columns (from top to bottom). When a player correctly guesses a word that occurs in the list of words, that player is awarded points according to a scoring system described below. The game ends when all words from the list of words have been guessed. The player with the highest score wins.
+
+The words from the words list and the letters of the board are made up of alphabetic, uppercase characters.
+Terminology in this handout
+
+    A board is a list of list of str, such as [['A', 'N', 'T', 'T'], ['X', 'S', 'O', 'B']].
+    A words list is a list of str such as ['ANT', 'SOB', TO'].
+
+What to do
+Step 1: Download the starter code
+
+In this assignment, we are providing starter code:
+
+Download the starter code:
+
+    a3.py (headers and docstrings for all functions you write)
+    wordlist1.txt (a sample words list file)
+    board1.txt (a sample board file)
+    a3_driver.py (a complete file that calls your functions and drives the game)
+
+Step 2: Complete the functions in a3.py.
+
+The starter code contains a header and a docstring for each function in the table below, so the descriptions are not repeated here. Each docstring contains one example call and the first thing you should do is add additional examples in order to gain a better understanding of the function.
+
+We recommend that you work on the functions in the order that they are listed in the starter code. As usual, once you finish writing a function, in IDLE, choose Run -> Run Module and test each function by calling some example function calls in the shell. You can also submit your assignment at this point to see whether you're on the right track: remember, you can submit once every hour up until the deadline. If the example calls return the expected results and you pass all the tests when you submit, move on to Step 3. Otherwise, modify your code and repeat the tests.
+
+You may find it useful to call some of the functions you have written from other functions. Here is some information about how the functions relate to each other and how they are used in the game:
+
+    is_valid_word: checks whether a word a that player guessed is in the words list.
+    make_str_from_row: creates a string from the list of single character strings representing a row. Hint: look at how this is used by board_contains_word_in_row.
+    make_str_from_column: creates a string from the list of single character strings representing a column. Hint: this may be helpful for board_contains_word_in_column.
+    board_contains_word_in_row: checks whether a word that a player guessed occurs in any of the rows of the board. This function is provided in the starter code.
+    board_contains_word_in_column: checks whether a word that a player guessed occurs in any of the columns of the board. Hint: see board_contains_word_in_row.
+    board_contains_word: checks whether a word that a player guessed occurs in any of the rows or columns of the board.
+    word_score: calculates the score that a correctly guessed word earns.
+    update_score: adds the points that a correctly guessed word earns to the score.
+    num_words_on_board: calculates how many words from the words list appear on a particular board.
+    read_words: creates a words list made up of the words from a file. Hint: to test this function, you should open a file such as wordslist1.txt and pass the open file as an argument to this function.
+    read_board: creates a board made up of the rows of letters from a file. Hint: to test this function, you should open a file such as board1.txt and pass the open file as an argument to this function.
+
+Step 3: Submit your work
+
+Go to the Assignments page and click the appropriate Submit button. Choose your completed a3.py file. It should be marked within a few minutes. You can see your results by clicking on your Score.
+
+You can submit a3.py once every hour. Notice that this means that you can submit a lot of times before the due date if you start early. You can even submit before you've finished all of the functions. We will take the highest score out of all of your submissions.
+Fun stuff: play the game!
+
+This will not work correctly until you have finished the rest of the assignment!
+
+We provide a driver for the game. Download a3_driver.py. Save it in the same directory as your a3.py file. In IDLE, run a3_driver.py and play your game!
+

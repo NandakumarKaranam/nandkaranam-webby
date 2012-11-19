@@ -1,0 +1,42 @@
+Stack frames are created when a function is called and destroyed when return is over.
+
+The useful value will then be pointing to the variable in the calling function and rest of the variables are deleted.
+
+No stack frame for "Print" !!!!
+
+Bool type returns TRUE or FALSE (literally!!)
+
+Logical oprs: not and or - returns bool
+
+	1.not
+	2.and
+	3.or
+
+***************************************************************************************************************************
+
+import <module>
+
+dir <module> : to list all functions in module
+
+usage:
+
+import math
+
+sq=math.sqrt(...)
+
+To import a usermade module, the usermade module must be in the same directory as the 'importing module'
+
+********************************************************************************************************************************
+ifsyntax
+//indent followed
+
+if condition :
+   return ..
+elif condition :
+   return
+else:                          //not compulsory
+   return
+
+***************************************************************************************************************
+3 <= x < 10    IMP: bool works on 2 vars only, 
+=> 3<=x and x<10

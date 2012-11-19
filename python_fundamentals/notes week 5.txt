@@ -1,0 +1,36 @@
+while (condn) :
+      statements
+Type list:
+list === array of anything
+list elements are called list items
+
+slicing in list similar to strings:
+ex: list[0:2] returns 0 1 only
+
+'in' operator works.
+List methods:
+method=function inside object.
+
+methods examples:
+list.append(.)
+list.extend(..) - pass only lists
+list.pop(.) - also returns last item
+list.pop(index)
+list.remove() - first instance of the item
+list.reverse()
+list.insert(index,value)
+list.index(value)
+
+
+
+Mutability and Aliasing:(only for lists)
+
+When two var contain same mem address, any change to one changes other.
+
+Therefore only lists are mutable not int float str bool
+
+Range function:
+range(start,stop,step)
+
+
+

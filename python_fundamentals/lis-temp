@@ -1,0 +1,4 @@
+def listcheck(lis):
+    for i in lis:
+        if i>10:
+            print(i)

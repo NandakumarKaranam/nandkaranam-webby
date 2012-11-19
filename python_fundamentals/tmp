@@ -1,0 +1,7 @@
+a = range(5)
+
+def mutate(a):
+    a[3] = 100
+
+mutate(a)
+print (a[3])

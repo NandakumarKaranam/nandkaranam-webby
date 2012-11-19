@@ -1,0 +1,5 @@
+def ret(num1,num2):
+    a=(max(num1,num2))
+    if a==num1:
+        return num1
+    return num2

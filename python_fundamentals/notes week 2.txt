@@ -1,0 +1,63 @@
+for help:
+help(func_name)
+
+
+docstring:
+
+def func_name():
+    '''--this pops up when func_name is being typed showing usage
+    //use (arg,arg)->arg
+    Return .......................
+    '''
+     func_name_body
+
+design recipe:
+
+def ...: //header
+    
+    '''(num)->num  //type contract
+
+    Return .....   //Description
+
+     >>func(num)	//example
+     ans
+
+     //body
+     //later test examples
+
+
+
+Note:
+Similar to variables, function calls will point to a mem in heap, 
+which will execute all the function statements.
+
+Example:
+
+def func(b):
+    a=b*b
+    return a
+
+ret=func(b)    
+----------------------------------------
+flow:
+
+mem func=x860	x860->func(body)
+
+stack frame is created:
+
+stack:		heap:
+
+mem b=x66	x66=value b
+
+		x67=b*b
+
+mem a=x67
+
+mem ret=x67
+----------------------------------------
+Stack destroyed (x66)
+
+
+
+
+		    
